@@ -71,7 +71,7 @@ $ npm install kibrow -S or yarn add kibrow -S
 
 ## Example Usage
 
-For more example usage and implementation check folder demo in this repository [here](https://github.com/restuwahyu13/kraken-browser/tree/main/demo), and before usage this module, if you're using ESLint you have must be added this config, and if you using typescript add `"noImplicitAny": false` to tsconfig.json.
+Before usage this module, if you're using ESLint you have must be added this config, and if you using typescript add `"noImplicitAny": false` to tsconfig.json, for more example usage and implementation check folder demo in this repository [here](https://github.com/restuwahyu13/kraken-browser/tree/main/demo).
 
 - ##### Overrides Eslint Config
 
