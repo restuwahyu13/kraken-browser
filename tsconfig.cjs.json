@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"outDir": "cjs",
+		"outDir": "dist",
 		"target": "ES2019",
 		"module": "CommonJS",
 		"moduleResolution": "Node",
