@@ -4,6 +4,8 @@
  * MIT Licensed
  */
 
+import 'core-js/features/array'
+import 'core-js/features/object'
 import 'regenerator-runtime/runtime.js'
 import { assert } from 'is-any-type'
 import { configValidator, allConfigValidator } from './utils/validatorCheck'
