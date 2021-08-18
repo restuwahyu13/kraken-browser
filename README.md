@@ -23,9 +23,9 @@ $ npm install kibrow -S or yarn add kibrow -S
 
 - #### Kraken config property
 
-  + **name** for to calling module in each every file and default value is to undefined
-  + **module** for to register module to global access and default value is to undefined
-  + **inject** for to disabled module to global access, if value is set to false and default value is to true
+  - **name** for to calling module in each every file and default value is to undefined
+  - **module** for to register module to global access and default value is to undefined
+  - **inject** for to disabled module to global access, if value is set to false and default value is to true
 
 - #### Example Kraken Config Not With SSR
 
@@ -47,6 +47,7 @@ $ npm install kibrow -S or yarn add kibrow -S
     ]
   })
   ```
+
 - #### Example Kraken Config With SSR
 
   ```js
@@ -93,21 +94,21 @@ For more example usage and implementation check folder demo in this repository [
   ]
   ```
 
-
 - ##### Example Usage Using JavaScript
 
   ```javascript
    self.$axios.get('https://jsonplaceholder.typicode.com/users')
    .then(res => console.log(res.data))
    .catch(err => console.log(err.response.data))
-  ```  
+  ```
+
 - ##### Example Usage Using TypeScript
 
   ```javascript
    self['$axios'].get('https://jsonplaceholder.typicode.com/users')
    .then(res => console.log(res.data))
    .catch(err => console.log(err.response.data))
-  ``` 
+  ```
 
 ## Testing
 
