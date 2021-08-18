@@ -50,7 +50,7 @@ $ npm install kibrow -S or yarn add kibrow -S
 
 ## Example Usage
 
-For example usage and implementaion, you check folder demo in this repository
+For example usage and implementaion, check folder demo in this repository [here](https://github.com/restuwahyu13/kraken-browser/tree/main/demo)
 
 ## Testing
 
