@@ -27,7 +27,7 @@ $ npm install kibrow -S or yarn add kibrow -S
   + **module** for to register module to global access and default value is to undefined
   + **inject** for to disabled module to global access, if value is set to false and default value is to true
 
-- #### Example kraken config
+- #### Example Kraken Config Not With SSR
 
   ```js
   import { krakenConfig } from 'kibrow'
@@ -47,10 +47,67 @@ $ npm install kibrow -S or yarn add kibrow -S
     ]
   })
   ```
+- #### Example Kraken Config With SSR
+
+  ```js
+  import { krakenConfig } from 'kibrow/ssr'
+  import axios from 'axios'
+  import _ from 'lodash'
+
+  krakenConfig({
+    packages: [
+      {
+        name: '$axios',
+        module: axios
+      },
+      {
+        name: '$_',
+        module: _
+      }
+    ]
+  })
+  ```
 
 ## Example Usage
 
-For example usage and implementaion, check folder demo in this repository [here](https://github.com/restuwahyu13/kraken-browser/tree/main/demo)
+For more example usage and implementation check folder demo in this repository [here](https://github.com/restuwahyu13/kraken-browser/tree/main/demo), and before usage this module, if you're using ESLint you have must be added this config.
+
+- ##### Overrides Eslint Config
+
+  ```json
+  "overrides": [
+    {
+      "files": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "rules": {
+        "no-restricted-globals": 0
+      },
+      "globals": {
+        "self": "writable"
+      }
+    }
+  ]
+  ```
+
+
+- ##### Example Usage Using JavaScript
+
+  ```javascript
+   self.$axios.get('https://jsonplaceholder.typicode.com/users')
+   .then(res => console.log(res.data))
+   .catch(err => console.log(err.response.data))
+  ```  
+- ##### Example Usage Using TypeScript
+
+  ```javascript
+   self['$axios'].get('https://jsonplaceholder.typicode.com/users')
+   .then(res => console.log(res.data))
+   .catch(err => console.log(err.response.data))
+  ``` 
 
 ## Testing
 
