@@ -1,0 +1,14 @@
+{
+	"extends": "next/core-web-vitals",
+	"overrides": [
+		{
+			"files": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+			"rules": {
+				"no-restricted-globals": 0
+			},
+			"globals": {
+				"self": "writable"
+			}
+		}
+	]
+}
