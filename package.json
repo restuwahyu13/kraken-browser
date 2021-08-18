@@ -29,11 +29,11 @@
 		"url": "https://github.com/restuwahyu13"
 	},
 	"repository": {
-		"url": "https://github.com/restuwahyu13/kraken-node"
+		"url": "https://github.com/restuwahyu13/kraken-browser"
 	},
-	"homepage": "https://github.com/restuwahyu13/kraken-node#readme",
+	"homepage": "https://github.com/restuwahyu13/kraken-browser#readme",
 	"bugs": {
-		"url": "https://github.com/restuwahyu13/kraken-node/issues"
+		"url": "https://github.com/restuwahyu13/kraken-browser/issues"
 	},
 	"license": "MIT",
 	"engines": {
@@ -41,17 +41,19 @@
 		"npm": ">=5"
 	},
 	"keywords": [
-		"kraken",
-		"kraken-node",
-		"dependency",
-		"dependency injection",
-		"module",
-		"module loader",
-		"kinode",
-		"node_modules",
-		"node",
 		"javascript",
-		"typescript"
+		"npm",
+		"node",
+		"typescript",
+		"browser",
+		"dependency-injection ",
+		" npm-package ",
+		"global",
+		"dependencies",
+		"node-package",
+		"global-module",
+		"kibrow",
+		"kraken-browser"
 	],
 	"dependencies": {
 		"core-js": "^3.16.2",
