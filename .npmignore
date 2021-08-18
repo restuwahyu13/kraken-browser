@@ -21,3 +21,4 @@ package-lock.json
 kraken.config.json
 demo
 cjs
+ssr

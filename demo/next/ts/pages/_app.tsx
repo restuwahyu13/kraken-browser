@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import { krakenConfig } from 'kibrow/esm'
+import { krakenConfig } from 'kibrow/ssr'
 import axios from 'axios'
 import _ from 'lodash'
 

@@ -19,5 +19,5 @@
 		"typeRoots": ["node_modules/@types"]
 	},
 	"include": ["src/**/*.ts"],
-	"exclude": ["node_modules", "cjs", "esm", "__test__/**/*.{test.ts,spec.ts}", "coverage", ".github"]
+	"exclude": ["node_modules", "dist", "ssr", "__test__/**/*.{test.ts,spec.ts}", "coverage", ".github"]
 }

@@ -2,19 +2,19 @@
 	"name": "kibrow",
 	"version": "0.0.1",
 	"description": "kraken-browser dependency injection to register module to global access for browser",
-	"main": "./cjs/index.js",
-	"module": "./esm/index.js",
+	"main": "./dist/index.js",
+	"module": "./ssr/index.js",
 	"type": "module",
 	"files": [
-		"/cjs/**",
-		"/esm/**"
+		"/dist/**",
+		"/ssr/**"
 	],
 	"scripts": {
-		"clean:esm": "rimraf esm",
-		"clean:cjs": "rimraf cjs",
-		"compiler:esm": "npm run clean:esm && tsc && babel --config-file ./.babelrc --extensions '.ts' src -d esm",
-		"compiler:cjs": "npm run clean:cjs && tsc --build tsconfig.cjs.json && babel --config-file ./babel.config.json --extensions '.ts' src -d cjs",
-		"build": "npm run compiler:esm && npm run compiler:cjs",
+		"clean:ssr": "rimraf ssr",
+		"clean:dist": "rimraf dist",
+		"compiler:ssr": "npm run clean:ssr && tsc && babel --config-file ./.babelrc --extensions '.ts' src -d ssr",
+		"compiler:dist": "npm run clean:dist && tsc --build tsconfig.cjs.json && babel --config-file ./babel.config.json --extensions '.ts' src -d dist",
+		"build": "npm run compiler:ssr && npm run compiler:dist",
 		"test": "jest",
 		"test:coverage": "jest --coverage",
 		"test:watch": "jest --watchAll",

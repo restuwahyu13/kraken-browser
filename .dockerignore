@@ -5,3 +5,4 @@ coverage
 kraken.config.json
 cjs
 demo
+ssr
