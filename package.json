@@ -4,7 +4,6 @@
 	"description": "kraken-browser dependency injection to register module to global access for browser",
 	"main": "./dist/index.js",
 	"module": "./ssr/index.js",
-	"type": "module",
 	"files": [
 		"/dist/**",
 		"/ssr/**"

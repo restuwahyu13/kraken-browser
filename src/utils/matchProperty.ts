@@ -34,7 +34,7 @@ export const matchPropertyDeep = (compare: Record<string, any>): boolean | undef
 export const matchFirstProperty = (compare: Record<string, any>): boolean | undefined => {
 	const isKeys = Object.keys(compare).includes('packages')
 	const isValue = assert.isArray(Object.values(compare)[0]) ? true : false
-	const isMatch = Object.keys(Object.values(compare)[0])
+	const isMatch = Object.keys(compare)
 
 	return isKeys && isValue && isMatch.length > 0 ? true : undefined
 }

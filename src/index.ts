@@ -30,9 +30,6 @@ export interface KrakenBrowserOptions {
  */
 
 export function krakenConfig(options: KrakenBrowserOptions): void {
-	// let isValidatorCheck: any = validatorCheck(options)
-
-	// if (assert.isBoolean(isValidatorCheck)) {
 	let isAllConfigValidator = allConfigValidator(options)
 
 	if (assert.isBoolean(isAllConfigValidator as any)) {
@@ -42,5 +39,4 @@ export function krakenConfig(options: KrakenBrowserOptions): void {
 			krakenBrowser(mergeProperty(options))
 		}
 	}
-	// }
 }
