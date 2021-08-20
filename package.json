@@ -1,6 +1,6 @@
 {
 	"name": "kibrow",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "kraken-browser dependency injection to register module to global access for browser",
 	"main": "./dist/index.js",
 	"module": "./ssr/index.js",
